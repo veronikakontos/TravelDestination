@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <title>Edit Destination</title>
+</head>
+<body>
+
+    <div class="container p-5">
+
+<div class="container_edit">
+    <div class="text-center">
+        <h2>Edit Destination</h2>
+
+
+        <div class="container m-3 text-center">
+            <a href="/destinations" class="btn btn-outline-dark">Home</a>
+            <a href="/logout" class="btn btn-outline-dark">Logout</a>
+        </div>
+
+        
+            <form action='/destinations/update' method='post'>
+                <div>
+
+                    {% with messages = get_flashed_messages() %}    
+                        {% if messages %}                        
+                            {% for message in messages %}     
+                                <p>{{message}}</p>          
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    
+                    <input type="hidden" name="id" value="{{destination.id}}">
+        
+                    <div class="text-center">
+                        <label for='name'>Name:</label>
+                        <input type='text' name='name' value="{{destination.name}}">
+                    </div>
+                    
+                    <div class="text-center">
+                        <label for='price'> Price$</label>
+                        <input type='number'  id="exampleInputPassword" name='price' value="{{destination.price}}">
+                    </div>
+
+                    <div class="text-center">
+                        <label for='date_made'>Date Made:</label>
+                        <input type='date' id="exampleInputPassword" name='date_made' value="{{destination.date_made}}">
+                    </div>
+                    
+                        <div class="text-center p-4">
+                            <label for="descriptions">Change Descriptions:</label>
+                            <!-- <textarea rows="15" cols="20" type='text' name='descriptions' value="{{destination.descriptions}}"></textarea> -->
+                         
+                        <!-- <label for='descriptions'>Description:</label> -->
+                        <input type='text' class="form-control-range" name='descriptions' value="{{destination.descriptions}}">
+                    </div>
+        
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary" value='create user'>
+                        Update
+                    </button>
+                </div>
+        
+            </form>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+</body>
+</html>

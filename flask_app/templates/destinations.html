@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Destinations</title>
+</head>
+<body>
+
+        <div class="container">
+        <style>
+           *{
+            margin: 0;
+            padding: 0;
+          }
+          .container {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(blue white azure);
+            background-position: center;
+            background-size: cover;
+          }
+          </style>
+          <!-- <img  src="{{ url_for('static', filename='images/under-ocean.jpeg')}}" alt="ocean photo"> -->
+        <h2>Welcome  {{session.first_name}}</h2>
+
+        <!-- <div class="container"></div> -->
+            <h5>All destinations are posted here</h5>
+
+            <div class="navbar">
+
+            </div>
+          <div class="all_container">
+
+            <a class="" href="/destinations/new">✔️Create</a>
+            <a href="/logout">/🔴Log Out</a>
+
+            <table class="table badge-pill">
+                <thead>
+                  <tr>
+                    <th scope="col">♡Destination</th>
+                    <th scope="col">☞Descriptions</th>
+                    <th scope="col">◎Actions</th>
+                    <th scope="col">Price💲</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for destination in destinations %}
+                  <tr>
+                      <td>{{destination['name']}}</td>
+                      <!-- <td> 
+                        {% if destination.under_30 %}
+                        Yes
+                      {% else %}
+                        No
+                      {% endif %}
+                      </td>  -->
+                      <td>{{destination['descriptions']}}</td>
+                      <td class="gap">
+                          <a href="/destination/{{destination.id}}">More Info/</a>
+                          {% if destination.user_id == session.user_id %}                
+                          <a href="/destination/edit/{{destination.id}}">Edit/</a>
+                          <a href="/destination/delete/{{destination.id}}">Delete</a>
+                          {% endif %}
+                      </td>
+                      <td>{{destination['price']}}</td>
+                  </tr>
+                  {% endfor %}
+              </tbody>
+              </table>
+            </div>
+          <!-- <img src="../static/images/hightatras.jpeg" width="100%" height="45%"> -->
+        </div>
+      
+</body>
+</html>

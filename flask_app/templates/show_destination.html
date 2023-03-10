@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <title>Show Destinations</title>
+</head>
+<body>
+    <div class="main m-4 text-center">
+        <h1>Welcome {{session.first_name}}!</h1>
+        <h5> This trip to {{destination.name}} is 14 days with hotel & flight from JFK(NY) ✈️</h5>
+        <p>Don't forget to check weather!</p>
+
+    <div class="welcome_container">
+        <div class="container">
+                <a href="/destinations" class="btn btn-outline-primary">Back to destination</a></button>
+                <a href="/logout" class="btn btn-outline-dark">Logout</a></button>
+        </div>
+
+        <div class="container2 p-4" >
+
+            <h5>INFO: {{destination.descriptions}}</h5>
+            <h5>PRICE:   {{destination.price}}$</h5>
+            <h5>DATE:   {{destination.date_made}}</h5>
+        </div>
+
+        
+        <div class="container">
+
+            <div class="row">
+                <div class="column">
+                    <!-- <h5>{{destination.name}}</h5>
+                    <h6>{{destination.descriptions}}</h6> -->
+                    <!-- <button type="button">Book</button> -->
+                </div>
+                
+            <div class="column"> 
+                {% if destination.cities[0].name != "None" %}
+                    
+                {% for city in destination.cities %}
+                <div class="card card3" style=" background-image: url(../static/images/{{city.image}});">
+                    <a  class="btn btn-light" href="/weather/{{city.name}}">check weather</a>
+                    <h6>{{city.name}}</h6>
+                    <p>{{city.descriptions}}</p>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+            
+
+        </div>
+        </div>  
+    </div>
+</body>
+</html>

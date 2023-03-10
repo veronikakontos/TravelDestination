@@ -1,0 +1,326 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    /* height: 100vh; */
+    background-position: center;
+    background: linear-gradient(rgb(129, 168, 246), rgb(249, 249, 254));
+    /* background-image: url(./images/under-ocean.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .popdest .button {
+    background-color: black;
+    width: 100px;
+    height: 50px;
+} */
+
+h1 {
+    color: black;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+
+        
+}
+
+p {
+    color: black;
+    font-size: 120px;
+    background-position: center;
+    background: whitesmoke;
+
+}
+/* .container1 {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 40px;
+
+}  */
+
+/* .container2 {
+    border: 2px solid black;
+    width: 700px;
+    height: 250px;
+    box-shadow: 2px 4px 20px black;
+} */
+
+.container5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(blue, white) url(./images/under-ocean.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center ;
+}
+
+.column {
+    flex-basis: 50%;
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    line-height: 19px;
+    /* background-color: whitesmoke; */
+}
+
+button {
+    width: 150px;
+    color: rgb(18, 17, 17);
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+
+}
+/* THIS IS STYLE FOR PHOTOS Form DESTINATIONS- AND CITIES */
+.card {
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 10px 20px;
+    transition: transform 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+/* This is style for POPDEST.HTML ------------------------------------------------ */
+
+.header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 50px;
+    transition: 0.5s ease;
+    background: rgb(248, 242, 251);
+} 
+
+/* header .brand {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+}  */
+
+/* header .navigation {
+    position: relative;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: #000;
+    font-size: 1em;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.4s ease;
+    font-weight: 400;
+}
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #0c0c0c;
+    transition: 0.5s ease;
+}
+header .navigation .navigation-items a:hover:before {
+    width: 100%;
+}
+
+section {
+    padding: 100px 50px;
+} */
+/* 
+.home {
+    /* position: relative; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #009de6; 
+/* } 
+
+.home .content {
+    z-index: 888;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.home .content  {
+    padding: 5px 10px;
+    /* border: 1px solid white; */
+    /* background: rgb(237, 237, 237); */
+    /* border: 1px solid whitesmoke; */
+    color: rgb(14, 13, 13);
+    font-weight: 700;
+    font-size: 1.3em;
+    border-radius: 5px;
+  */ */
+/* 
+.home video {
+    z-index: 000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+}
+.slider-navigation {
+    z-index: 888;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    transform: translateY(80px);
+}
+
+.slider-navigation .nav-btn {
+    width: 18px;
+    height: 13px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: whitesmoke;
+    transition:0.4s ease;
+    border: 2px solid black;
+} */
+
+/* .slider-navigation .nav-btn.active {
+    background: black;
+
+}
+.slider-navigation .nav-btn:hover {
+    transform: scale(1.4em);
+}
+.slider-navigation .nav-btn:not(:last-child) {
+    margin-right: 15px;
+}
+
+.video-slide {
+    position: absolute;
+    width: 100%;
+}
+.video-slide.active {
+    transition: 1.5s ease;
+    transition-property: clip-path;
+} */
+
+
+/* 
+
+@media (max-widt: 1040px) {
+    header{
+        display: flex; */
+        /* padding: 12px 20px;
+        transition: 0.5s ease; */
+        /* justify-content: space-between;
+        align-items: center; */
+    /* }
+    section {
+        padding: 100px 20px;
+    }
+    header .navigation {
+        position: fixed;
+        display: none;
+    }} */ */
+
+
+/* this is styling for edit html, page */
+.container_edit {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 800px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 6px 17px whitesmoke;
+    background:rgb(220, 218, 218);
+    
+}
+
+/* this is styling for show SHOW_DESTINATION.html cities page */
+
+.welcome_container {
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 2px solid black;
+    box-shadow: 5px 6px 17px rgb(20, 19, 19);
+    padding-top: 20px;
+    /* background: rgb(235, 68, 68); */
+    background-image: url(../static/images/travel7.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* this is styling for all destinations post on destinations.html */
+.all_container {
+    border: 3px solid white;
+    background: rgb(255, 254, 254)
+
+}
+/* this is styling for CREATE NEW DESTINATION AT NEW.HTML */
+.createnewdestination {
+    background: #000;
+}
+
+.weatherstyle {
+    margin: 100px;
+    padding: 300px;
+    background-image: url(./images/weather.webp) ;
+    background-repeat: no-repeat;
+    width: 60%;
+    background-size: cover;
+    border: 1px solid black;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Index</title>
+</head>
+<body>
+
+  <!-- NAVBAR MENU -->
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container">
+        <a href="/destination/popdest" class="navbar-brand">🔳Popular Destination</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav m-auto d-flex">
+                <!-- <li class="nav-item">
+                    <a href="#info" class="nav-link"> More Info</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a href="#reachout" class="nav-link">Reach Out To Us</a>
+                </li> -->
+                <li class="d-flex flex-row-reverse"> <h6>(ET)</h6>
+                  <h5 id="current-time"></h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- FRONT INFO  -->
+  <section class="text-light p-5 text-center text-sm-start">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h3>Create Relaxing 
+              Unforgetable Destination
+          </h3>
+          <!-- <p class="lead m-4 my-2 p-3">Fill your life with experiences, not things. Have story to tell, not stuff to show.<br> -->
+        
+
+          </p>
+          <!-- <button class="btn btn-primary btn-lg"></button> -->
+        </div>
+        <img class="img-fluid w-50" src="{{ url_for('static', filename='images/planeglobe.webp')}}" alt="ocean photo">
+      </div>
+    </div>
+  </section>
+ 
+
+<!-- REGISTER AND LOG IN -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Register</h4>
+                {% with messages = get_flashed_messages() %}    
+                {% if messages %}                        
+                    {% for message in messages %}     
+                        <p>{{message}}</p>          
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+                <form action="/register" method="post">
+                  <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" placeholder="first name" name="first_name"> 
+                  </div>
+                  <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" placeholder="last name" name="last_name"> 
+                  </div>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" placeholder="email" name="email"> 
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password" value="password" name="password">
+                  </div>
+                  <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Password" value="password" name="confirm-password">
+                  </div>
+                  <button type="submit" class="btn btn-outline-info">Submit</button>
+                </form>
+            </div>
+            <div class="col">
+                <h4>Login</h4>
+                {% with messages = get_flashed_messages() %}    
+                {% if messages %}                        
+                    {% for message in messages %}     
+                        <p>{{message}}</p>          
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+                <form action="/login" method="post">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" placeholder="email" name="email"> 
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password" value="password" name="password">
+                  </div>
+                  <button type="submit" class="btn btn-outline-info">Submit</button>
+
+                </form>
+              
+            </div>
+        </div>
+    
+    </div>
+  
+<!-- CURRENT TIME DISPLAY ON NAV BAR  -->
+    <script>
+      let time = document.getElementById("current-time");
+
+      setInterval(() => {
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+      }, 1000)
+    
+    </script>
+</body>
+</html>

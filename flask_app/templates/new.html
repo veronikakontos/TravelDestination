@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>New Destination</title>
+</head>
+<body>
+    <div class="container text-center p-3 badge-primary mt-3">
+        <h1 class="text-center">Create a New Destination</h1>
+    </div>
+
+    <div class="container">
+        <div class="con-text text-center text-danger">
+        <p5>Would you like to know how is a weather in Amazon Rain Forrest? Or rather see,
+            how clear sky is in Bora Bora? If you love winter sports, than check weather
+            in High Tatras(Slovakia). How about.. you create your own destination and share it with the WORLD!
+        </div>
+        </p5>
+        <div class="photos">
+            <img class="img-thumbnail d-inline-block m-2" src="{{ url_for('static', filename='images/laguna.webp')}}" width="300px" height="200px" alt="ocean photo">
+            <img class="img-thumbnail d-inline-block m-2" src="{{ url_for('static', filename='images/hightatras.jpeg')}}" width="350px" height="200px" alt="mountains">
+            <img class="img-thumbnail d-inline-block m-2" src="{{ url_for('static', filename='images/rainforest.jpg')}}" width="390px" height="200px" alt="forest">
+        </div>
+
+        {% with messages = get_flashed_messages() %}    
+        {% if messages %}                        
+            {% for message in messages %}     
+                <p>{{message}}</p>          
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    <!-- </div>     -->
+    <a href="/logout" class="btn btn-outline-primary d-flex m-4 text-center">Logout</a>
+
+    <!-- <div class="createnewdestination d-block"> -->
+        <div class="createnewdestination d-block"></div>
+                <form action="/destination/create" method="post">
+
+
+                        <input type="hidden" name="user_id" value="{{session.user_id}}">
+                
+                    <div class="col-7">
+                        <label for="exampleInputPassword1">Date Made</label>
+                        <input type="date" class="col-3" id="exampleInputPassword1" name="date_made">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleInputPassword1">Price</label>
+                        <input type="number" class="text-dark" id="exampleInputPassword1" name="price" value="0">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleInputEmail1">Name Of Destination</label>
+                        <input type="text" class="col-md-5" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleInputPassword1">Description</label>
+                        <input type="text" class="text-info col-10" id="exampleInputPassword1" name="descriptions">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary m-4">Submit</button>
+                </form>
+        </div>
+
+        
+    
+
+    </body>
+</html>

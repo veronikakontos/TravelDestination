@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <title>weather</title>
+</head>
+<body>
+
+    <div class="weatherstyle">
+        <p>You are looking:</p>
+        <h1>{{data.name}}</h1>
+        <br>
+        <p>Current weather:</p>
+        <h1>{{data.weather[0].description}}</h1>
+        <br>
+        <p>Current temperature in </p>
+        <h1>{{data.weather[0].temp}} ℉ </h1>
+        <h1>{{data.main.temp}}</h1>
+        <br>
+
+
+
+    <button><a href="/destinations" class="btn btn-dark">Back Home</a></button>
+
+</div>
+<script>
+    console.log(data);
+</script>
+</body>
+</html>
