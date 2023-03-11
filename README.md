@@ -1,8 +1,7 @@
-# PinkSpace - a simple social media application
+# Travel Destination - a simple social media application
 <!-- > Live demo [_here_](https://www.example.com). -->
 
 ## Table of Contents
-
 - 
   - [Table of Contents](#table-of-contents)
   - [General Information](#general-information)
@@ -15,11 +14,11 @@
   - [Contact](#contact)
 
 ## General Information
-This project is a full-stack web application built using Python, Flask, MySQL, and Socket.IO. 
+This project is a full-stack web application built using Python, Css, Html, Flask, MySQL, and Api. 
 
-After registering an account users can create new travel destinatios, view and comment on posts from other users, as well as current weather in real-time using Weather API features.
+After registering an account users can create new travel destinations, view and comment on posts from other users, as well as current weather in real-time using Weather API features.
 
-Destintions allows users to create, edit , update or delete and share it with other registered user, which depends on travel plan. User can choose country and cities in the prefered destiantion, travel date and cost.
+Destintions allows users to create, edit , update or delete and share it with other registered user. User can choose country and cities in the prefered destiantion, travel date and cost.
 
 <br>
 
@@ -42,7 +41,8 @@ Destintions allows users to create, edit , update or delete and share it with ot
 - File upload for profile photos
 - Posts and comments
 - Profile page
-- Global chat room
+- Api weather (current weather)
+
 
 <br>
 
@@ -52,16 +52,16 @@ Login and Registration page with designated validations
 ![Login and Registration](./site_images/LoginandReg.png)
 
 Main Homepage where users can create and respond to posts
-![Homepage](./site_images/Homepage.png)
+![View Destinations](./site_images/Homepage.png)
 
-Followers page where users can follow and view other users' pages
-![Followers](./site_images/Followers.png)
+Real-time cweather from around the world
+![API](./site_images/Chat.png)
 
-Real-time chat feature implemented using Socket.IO
-![Chat](./site_images/Chat.png)
+Edit or Update your destination
+![Edit/Update Profile](./site_images/EditProfile.png)
 
-Edit your profile and upload a profile picture
-![Edit Profile](./site_images/EditProfile.png)
+Delete your destination
+![Delete Profile](./site_images/EditProfile.png)
 
 <br>
 
@@ -71,7 +71,8 @@ Project requirements/dependencies are located within Pipfile.lock file.
 
         pipenv install 
         pipenv shell
-        python3 server.py
+        python3 server.py (for Mac users)
+        pyhton server.py (windows users)
 
 <br>
 
@@ -89,14 +90,6 @@ Room for improvement:
 - CSS File Organization
 > Potentially allocate a CSS file for each HTML template page
 <br>
-
-
-To do:
-- Global and Following-only homepage toggle
-- Optional photo upload element for posts
-- Socket.IO _rooms_ to allow for direct messages as well as message retention when the page is reloaded or closed
-- CSS responsiveness and dark and light mode toggle
-- Inspired by MySpace, add your favorite song that plays upon opening your profile
 
 <br>
 
