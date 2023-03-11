@@ -2,7 +2,8 @@
 <!-- > Live demo [_here_](https://www.example.com). -->
 
 ## Table of Contents
-- [PinkSpace - a simple social media application](#pinkspace---a-simple-social-media-application)
+
+- 
   - [Table of Contents](#table-of-contents)
   - [General Information](#general-information)
   - [Technologies Used](#technologies-used)
@@ -14,11 +15,11 @@
   - [Contact](#contact)
 
 ## General Information
-PinkSpace is a full-stack web application built using Python, Flask, MySQL, and Socket.IO. 
+This project is a full-stack web application built using Python, Flask, MySQL, and Socket.IO. 
 
-After registering an account users can create new posts, view and comment on posts from other users, as well as chat in real-time using the live-chat feature implemented utilizing socket.IO.
+After registering an account users can create new travel destinatios, view and comment on posts from other users, as well as current weather in real-time using Weather API features.
 
-PinkSpace allows users to catch up with their friends without the toxic performative elements that tend to be associated with social media websites such as follower and/or like counts.
+Destintions allows users to create, edit , update or delete and share it with other registered user, which depends on travel plan. User can choose country and cities in the prefered destiantion, travel date and cost.
 
 <br>
 
