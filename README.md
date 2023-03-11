@@ -24,14 +24,15 @@ Destintions allows users to create, edit , update or delete and share it with ot
 
 
 ## Technologies Used
-- Python - version 3.11.1
-- Flask - version 2.2.2
-- MySQL - version 8.0.22 for macos10.15 on x86_64
-- Python-socketio - version 5.7.2
-- Flask-socketio - version 5.2.2
-- Flask-bcrypt - version 1.0.1
-- Bcrypt - version 4.0.1
-- Pymysql - version 1.0.2
+- Python
+- Flask
+- MySQL 
+- Flask-bcrypt 
+- Bcrypt
+- Pymysql 
+- API
+- Html5
+- CSS
 
 <br>
 
@@ -49,19 +50,23 @@ Destintions allows users to create, edit , update or delete and share it with ot
 
 ## Screenshots
 Login and Registration page with designated validations 
-![Login and Registration](./site_images/LoginandReg.png)
+![Login and Registration](/screenshots/logreg.png)
 
-Main Homepage where users can create and respond to posts
-![View Destinations](./site_images/Homepage.png)
+Main Homepage where each user can see all destinations created by user or other users. Delete destination can only creator of the destination.
+![All Destinations](/screenshots/alldest.png)
+![All Destinations](/screenshots/deletedest.png)
 
-Real-time cweather from around the world
-![API](./site_images/Chat.png)
+Welcome page where user who is log in, will see his/her/their name and can see destination and all info about the trip
+![All Destinations](/screenshots/welcomedest.png)
 
-Edit or Update your destination
-![Edit/Update Profile](./site_images/EditProfile.png)
+Real-time weather from choosen city destination
+![API](/screenshots/apiweather.png)
 
-Delete your destination
-![Delete Profile](./site_images/EditProfile.png)
+Edit or Update destination
+![Edit/Update Profile](/screenshots/createdest.png)
+
+Popular destination is preview as video(repeating 5sec)
+![Video of popular destination](/screenshots/video.png)
 
 <br>
 
@@ -72,7 +77,7 @@ Project requirements/dependencies are located within Pipfile.lock file.
         pipenv install 
         pipenv shell
         python3 server.py (for Mac users)
-        pyhton server.py (windows users)
+        python server.py (windows users)
 
 <br>
 
