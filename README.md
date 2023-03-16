@@ -52,7 +52,7 @@ Destintions allows users to create, edit , update or delete and share it with ot
 Login and Registration page with designated validations 
 ![Login and Registration](/screenshots/logreg.png)
 
-Main Homepage where each user can see all destinations created by user or other users. Delete destination can only creator of the destination.
+Main Homepage where each registered and logged in user can see all destinations created by other users. Delete destination can only creator of the destination.
 ![All Destinations](/screenshots/alldest.png)
 ![All Destinations](/screenshots/deletedest.png)
 
