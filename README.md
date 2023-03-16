@@ -65,7 +65,7 @@ Real-time weather from choosen city destination
 Edit or Update destination with validation. User must provide correct information to be able continue with website
 ![Edit/Update Profile](/screenshots/createdest.png)
 
-Popular destination is preview as video(repeating 5sec)
+Popular destination is preview as video MP4(repeating every 5sec)
 ![Video of popular destination](/screenshots/video.png)
 
 <br>
