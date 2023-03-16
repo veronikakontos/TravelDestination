@@ -1,4 +1,4 @@
-# Travel Destination - a simple social media application
+# Travel Destination - a simple social media website
 <!-- > Live demo [_here_](https://www.example.com). -->
 
 ## Table of Contents
@@ -62,7 +62,7 @@ Welcome page where user who is log in, will see his/her/their name and can see d
 Real-time weather from choosen city destination
 ![API](/screenshots/apiweather.png)
 
-Edit or Update destination
+Edit or Update destination with validation. User must provide correct information to be able continue with website
 ![Edit/Update Profile](/screenshots/createdest.png)
 
 Popular destination is preview as video(repeating 5sec)
