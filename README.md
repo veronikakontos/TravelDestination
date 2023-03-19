@@ -77,7 +77,7 @@ Project requirements/dependencies are located within Pipfile.lock file.
         pipenv install 
         pipenv shell
         python3 server.py (for Mac users)
-        python server.py (windows users)
+        python server.py (for Windows users)
 
 <br>
 
