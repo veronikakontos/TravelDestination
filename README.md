@@ -43,6 +43,7 @@ Destintions allows users to create, edit , update or delete and share it with ot
 - Posts and comments
 - Profile page
 - Api weather (current weather)
+- Responsive for small screen sizes
 
 
 <br>
