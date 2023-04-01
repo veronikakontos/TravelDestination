@@ -14,11 +14,11 @@
   - [Contact](#contact)
 
 ## General Information
-This project is a full-stack web application built using Python, Css, Html, Flask, MySQL, and Api. 
+This project is a full-stack web application built using Python, CSS, Html, Flask, MySQL, and API. 
 
-After registering an account users can create new travel destinations, view and comment on posts from other users, as well as current weather in real-time using Weather API features.
+After registering an account users can create new travel destinations, view and comment on posts from other users, as well, as current weather in real-time using Weather API features.
 
-Destintions allows users to create, edit , update or delete and share it with other registered user. User can choose country and cities in the prefered destiantion, travel date and cost.
+Destinations allow users to create, edit, update, or delete and share it with other registered users. Users can choose countries and cities in their preferred destination, travel date, and cost.
 
 <br>
 
