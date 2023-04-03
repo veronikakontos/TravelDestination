@@ -39,7 +39,6 @@ Destinations allow users to create, edit, update, or delete and share it with ot
 
 ## Features
 - Login and registration with validation and Bcrypt for password security
-- File upload for profile photos
 - Posts and comments
 - Profile page
 - Api weather (current weather)
