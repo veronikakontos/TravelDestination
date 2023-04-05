@@ -43,8 +43,7 @@ Destinations allow users to create, edit, update, or delete and share it with ot
 - Profile page
 - Api weather (current weather)
 - Responsive for small screen sizes
-
-
+- 
 <br>
 
 
