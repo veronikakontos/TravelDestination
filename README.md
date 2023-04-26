@@ -25,6 +25,7 @@ Destinations allow users to create, edit, update, or delete and share it with ot
 
 
 ## Technologies Used
+
 - Python
 - Flask
 - MySQL 
