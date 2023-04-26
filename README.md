@@ -1,4 +1,4 @@
-# Travel Destination - a simple social media website for those who love to share travel destinations and ideas
+# Travel Destination - a simple social media website for those who love to share travel destinations and ideas which city to go and have the best time 
 <!-- > Live demo [_here_](https://www.example.com). -->
 
 
