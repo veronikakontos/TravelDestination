@@ -92,9 +92,9 @@ Project MVP: _Complete_. However, additional features planned!
 
 Room for improvement:
 - CSS Responsiveness
-> Aesthetic design and ease of use across a variety of device screen sizes 
-- CSS File Organization
-> Potentially allocate a CSS file for each HTML template page
+> Aesthetic design and ease of use across a variety of device screen sizes
+
+
 <br>
 
 <br>
