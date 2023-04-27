@@ -33,7 +33,7 @@ Destinations allow users to create, edit, update, or delete and share it with ot
 - Bcrypt
 - Pymysql 
 - API
-- Html5
+- HTML5
 - CSS
 
 <br>
