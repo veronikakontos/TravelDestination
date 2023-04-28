@@ -83,7 +83,6 @@ Project requirements/dependencies are located within Pipfile.lock file.
 
 <br>
 
-
 ## Project Status
 Project MVP: _Complete_. However, additional features planned!
 
