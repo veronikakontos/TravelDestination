@@ -1,4 +1,4 @@
-# Travel Destination - a simple social media website for those who love to share travel destinations and ideas which city to go and have the best time.
+# Travel Destination - a simple social media website for those who love to share travel destinations and ideas which city to visit and do fun activities
 Web app has a API with current weather 
 <!-- > Live demo [_here_](https://www.example.com). -->
 
