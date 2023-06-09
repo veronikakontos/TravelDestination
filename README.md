@@ -72,6 +72,7 @@ Popular destination is preview as video MP4(repeating every 5sec)
 <br>
 
 
+
 ## Setup and Usage
 Project requirements/dependencies are located within Pipfile.lock file. 
 
