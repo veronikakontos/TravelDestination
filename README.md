@@ -54,11 +54,11 @@ Destinations allow users to create, edit, update, or delete and share it with ot
 Login and Registration page with designated validations 
 ![Login and Registration](/screenshots/logreg.png)
 
-Main Homepage where each registered and logged-in user can see all destinations created by other users. Delete destination can only creator of the destination 
+Main Homepage where each registered and logged-in user can see all destinations created by other users. Delete destination can only the creator of the destination 
 ![All Destinations](/screenshots/alldest.png)
 ![All Destinations](/screenshots/deletedest.png)
 
-The welcome page where a user who is log in, will see his/her/their name and can see destination and all info about the trip
+The welcome page where a user who is log in, will see his/her/their name and can see the destination and all info about the trip
 ![All Destinations](/screenshots/welcomedest.png)
 
 Real-time weather from chosen city destination
@@ -67,7 +67,7 @@ Real-time weather from chosen city destination
 Edit or Update the destination with validation. Users must provide correct information to be able to continue with the website
 ![Edit/Update Profile](/screenshots/createdest.png)
 
-A popular destination is previewed as video MP4(repeating every 5sec)
+A popular destination is previewed as a video MP4(repeating every 5sec)
 ![Video of popular destination](/screenshots/video.png)
 
 <br>
@@ -85,7 +85,7 @@ Project requirements/dependencies are located within Pipfile.lock file.
 <br>
 
 ## Project Status
-Project MVP: _Complete_. However, additional features planned!
+Project MVP: _Complete_. However, additional features are planned!
 
 <br>
 
