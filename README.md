@@ -55,11 +55,11 @@ Destinations allow users to create, edit, update, or delete and share it with ot
 Login and Registration page with designated validations 
 ![Login and Registration](/screenshots/logreg.png)
 
-Main Homepage where each registered and logged in user can see all destinations created by other users. Delete destination can only creator of the destination 
+Main Homepage where each registered and logged-in user can see all destinations created by other users. Delete destination can only creator of the destination 
 ![All Destinations](/screenshots/alldest.png)
 ![All Destinations](/screenshots/deletedest.png)
 
-Welcome page where user who is log in, will see his/her/their name and can see destination and all info about the trip
+The welcome page where user who is log in, will see his/her/their name and can see destination and all info about the trip
 ![All Destinations](/screenshots/welcomedest.png)
 
 Real-time weather from choosen city destination
