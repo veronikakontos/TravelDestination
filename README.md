@@ -59,16 +59,16 @@ Main Homepage where each registered and logged-in user can see all destinations 
 ![All Destinations](/screenshots/alldest.png)
 ![All Destinations](/screenshots/deletedest.png)
 
-The welcome page where user who is log in, will see his/her/their name and can see destination and all info about the trip
+The welcome page where a user who is log in, will see his/her/their name and can see destination and all info about the trip
 ![All Destinations](/screenshots/welcomedest.png)
 
-Real-time weather from choosen city destination
+Real-time weather from chosen city destination
 ![API](/screenshots/apiweather.png)
 
-Edit or Update destination with validation. User must provide correct information to be able to continue with the website
+Edit or Update the destination with validation. Users must provide correct information to be able to continue with the website
 ![Edit/Update Profile](/screenshots/createdest.png)
 
-Popular destination is preview as video MP4(repeating every 5sec)
+A popular destination is previewed as video MP4(repeating every 5sec)
 ![Video of popular destination](/screenshots/video.png)
 
 <br>
