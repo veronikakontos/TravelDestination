@@ -65,7 +65,7 @@ The welcome page where user who is log in, will see his/her/their name and can s
 Real-time weather from choosen city destination
 ![API](/screenshots/apiweather.png)
 
-Edit or Update destination with validation. User must provide correct information to be able continue with website
+Edit or Update destination with validation. User must provide correct information to be able to continue with the website
 ![Edit/Update Profile](/screenshots/createdest.png)
 
 Popular destination is preview as video MP4(repeating every 5sec)
