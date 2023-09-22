@@ -48,6 +48,7 @@ Destinations allow users to create, edit, update, or delete and share it with ot
 
 <br>
 
+
 ## Screenshots
 Login and Registration page with designated validations 
 ![Login and Registration](/screenshots/logreg.png)
